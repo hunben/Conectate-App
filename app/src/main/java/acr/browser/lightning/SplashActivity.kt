@@ -65,7 +65,7 @@ class SplashActivity @Inject constructor(): LocaleAwareActivity() {
             // Just start our main activity now for fastest loading
             // TODO: check if we need onboarding
             // Launch main activity
-            val intent = Intent(this, MainActivity::class.java)
+           val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             //
             finish()

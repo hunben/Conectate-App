@@ -50,14 +50,22 @@ android.productFlavors.all { flavor ->
 def generatedLocaleListDir = layout.buildDirectory.dir('generated/source/locale/acr/browser/lightning/locale')
 
 android {
-    compileSdkVersion project.targetSdkVersion
-    // Specify namespace for generated R and BuildConfig classes
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\flavi\\Documents\\GitHub\\Fulguris\\llaves\\llave.jks')
+            storePassword '123456'
+            keyAlias 'llave1'
+            keyPassword '123456'
+        }
+    }
+// Specify namespace for generated R and BuildConfig classes
     namespace 'acr.browser.lightning'
 
     defaultConfig {
         minSdkVersion project.minSdkVersion
         targetSdkVersion project.targetSdkVersion
         vectorDrawables.useSupportLibrary = true
+        signingConfig signingConfigs.debug
     }
 
     sourceSets {
@@ -184,6 +192,7 @@ android {
         }
 
     }
+    compileSdk targetSdkVersion
 
     // Filter out invalid variants
     variantFilter { variant ->

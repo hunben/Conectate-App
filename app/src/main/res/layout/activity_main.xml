@@ -28,8 +28,10 @@
                 android:background="?android:attr/colorBackground"
                 android:animateLayoutChanges="true">
 
-                <include android:id="@+id/toolbar_include"
-                    layout="@layout/toolbar"/>
+                <include
+                    android:id="@+id/toolbar_include"
+                    layout="@layout/toolbar"
+                    android:layout_height="0dp" />
 
                 <include android:id="@+id/findInPageInclude" layout="@layout/search_interface"/>
 

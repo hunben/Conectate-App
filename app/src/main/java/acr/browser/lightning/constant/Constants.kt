@@ -19,7 +19,7 @@ const val FILE = "file://"
 const val FOLDER = "folder://"
 
 object Schemes {
-    const val Fulguris = "fulguris"
+    const val Fulguris = "Conectate Network"
     const val About = "about"
 }
 

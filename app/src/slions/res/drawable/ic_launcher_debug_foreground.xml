@@ -20,7 +20,7 @@
  All Rights Reserved.
 -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="108dp"
+    android:width="0dp"
     android:height="108dp"
     android:viewportWidth="47.058823"
     android:viewportHeight="47.058823">

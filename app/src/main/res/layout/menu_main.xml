@@ -39,8 +39,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:contentDescription="@string/action_reload"
-                app:tooltipText="@{@string/action_reload}"
-                app:srcCompat="@drawable/ic_action_refresh" />
+                app:srcCompat="@drawable/ic_action_refresh"
+                app:tooltipText="@{@string/action_reload}" />
 
             <ImageButton
                 android:id="@+id/menuShortcutBack"
@@ -49,8 +49,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:contentDescription="@string/action_back"
-                app:tooltipText="@{@string/action_back}"
-                app:srcCompat="@drawable/ic_action_back" />
+                app:srcCompat="@drawable/ic_action_back"
+                app:tooltipText="@{@string/action_back}" />
 
             <ImageButton
                 android:id="@+id/menuShortcutForward"
@@ -59,8 +59,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:contentDescription="@string/action_forward"
-                app:tooltipText="@{@string/action_forward}"
-                app:srcCompat="@drawable/ic_action_forward" />
+                app:srcCompat="@drawable/ic_action_forward"
+                app:tooltipText="@{@string/action_forward}" />
 
             <ImageButton
                 android:id="@+id/menuShortcutBookmarks"
@@ -69,10 +69,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:contentDescription="@string/action_bookmarks"
-                app:tooltipText="@{@string/action_bookmarks}"
-                app:srcCompat="@drawable/round_star_border_24"
                 android:visibility="gone"
-                />
+                app:srcCompat="@drawable/round_star_border_24"
+                app:tooltipText="@{@string/action_bookmarks}" />
 
             <ImageButton
                 android:id="@+id/menuShortcutHome"
@@ -81,8 +80,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:contentDescription="@string/action_show_homepage"
-                app:tooltipText="@{@string/action_show_homepage}"
-                app:srcCompat="@drawable/ic_action_home" />
+                app:srcCompat="@drawable/ic_action_home"
+                app:tooltipText="@{@string/action_show_homepage}" />
 
         </LinearLayout>
 

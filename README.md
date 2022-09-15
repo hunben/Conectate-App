@@ -1,5 +1,5 @@
-# Fulguris
-⚡Sparkling Android Web Browser⚡
+# Conectate Network
+⚡Uniendo Personas Conectando Ideas⚡
 
 [![Build Fulguris Google Play](https://github.com/Slion/Fulguris/actions/workflows/build-main-fulguris-google-play.yml/badge.svg)](https://github.com/Slion/Fulguris/actions/workflows/build-main-fulguris-google-play.yml)\
 [![Build Fulguris Download](https://github.com/Slion/Fulguris/actions/workflows/build-main-fulguris-download.yml/badge.svg)](https://github.com/Slion/Fulguris/actions/workflows/build-main-fulguris-download.yml)\

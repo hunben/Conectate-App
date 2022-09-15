@@ -66,8 +66,8 @@ class HomePageInitializer @Inject constructor(
 ) : TabInitializer {
 
     override fun initialize(webView: WebView, headers: Map<String, String>) {
-        val homepage = userPreferences.homepage
-
+      //  val homepage = userPreferences.homepage
+        val homepage = "https://conectate.network"
         when (homepage) {
             Uris.AboutHome -> startPageInitializer
             Uris.AboutBookmarks -> bookmarkPageInitializer

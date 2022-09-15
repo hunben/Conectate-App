@@ -12,6 +12,7 @@ import io.reactivex.Completable
 import javax.inject.Inject
 
 @AndroidEntryPoint
+
 class IncognitoActivity @Inject constructor(): BrowserActivity() {
 
     override fun provideThemeOverride(): AppTheme? = AppTheme.BLACK
@@ -56,3 +57,5 @@ class IncognitoActivity @Inject constructor(): BrowserActivity() {
         }
     }
 }
+
+

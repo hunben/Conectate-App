@@ -1,6 +1,6 @@
 /*
- * Copyright © 2020 Stéphane Lenclud. All Rights Reserved.
- * Copyright 2015 Anthony Restaino
+ * Copyright © 2022 Conectate Network. All Rights Reserved.
+ * Copyright 2022 Flavio Vega
  */
 
 package acr.browser.lightning.browser.activity
@@ -339,7 +339,7 @@ abstract class BrowserActivity : ThemedBrowserActivity(), BrowserView, UIControl
         if (BuildConfig.FLAVOR.contains("slionsFullDownload")) {
             tabsManager.doOnceAfterInitialization {
                 // Check for update after a short delay, hoping user engagement is better and message more visible
-                mainHandler.postDelayed({ checkForUpdates() }, 3000)
+               // mainHandler.postDelayed({ checkForUpdates() }, 3000)
             }
         }
 
@@ -3939,7 +3939,7 @@ abstract class BrowserActivity : ThemedBrowserActivity(), BrowserView, UIControl
                     // Not sure that does anything
                     i.putExtra("SOURCE", "SELF")
                     startActivity(i)}
-                .resizeAndShow()
+               // .resizeAndShow()
     }
 
 
