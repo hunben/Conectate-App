@@ -482,7 +482,7 @@ class GeneralSettingsFragment : AbstractSettingsFragment() {
         val currentHomepage: String = if (!URLUtil.isAboutUrl(userPreferences.homepage)) {
             userPreferences.homepage
         } else {
-            "https://www.google.com"
+            "https://conectate.network"
         }
 
         activity?.let {

@@ -47,7 +47,7 @@ class AboutSettingsFragment : AbstractSettingsFragment() {
 
         if (BuildConfig.FLAVOR.contains("slionsFullDownload")) {
             findPreference<Preference>(SETTINGS_VERSION)?.apply {title = getString(R.string.checking_for_updates)}
-            checkForUpdates()
+           // checkForUpdates()
         }
 
 

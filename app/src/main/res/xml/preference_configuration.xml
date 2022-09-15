@@ -13,19 +13,19 @@
         android:key="@string/pref_key_toolbars_bottom"
         android:title="@string/settings_title_toolbars_bottom"
         app:icon="@drawable/ic_bottom"
-        app:iconSpaceReserved="false" />
+        app:iconSpaceReserved="true" />
 
     <SwitchPreferenceCompat
         android:key="@string/pref_key_pull_to_refresh"
         android:title="@string/pref_title_pull_to_refresh"
         app:icon="@drawable/ic_action_refresh"
-        app:iconSpaceReserved="false" />
+        app:iconSpaceReserved="true" />
 
     <SwitchPreferenceCompat
-        app:key="@string/pref_key_hide_status_bar"
-        app:title="@string/pref_title_hide_status_bar"
         app:icon="@drawable/ic_fullscreen"
-        app:iconSpaceReserved="false" />
+        app:iconSpaceReserved="true"
+        app:key="@string/pref_key_hide_status_bar"
+        app:title="@string/pref_title_hide_status_bar" />
 
     <SwitchPreferenceCompat
         app:key="@string/pref_key_hide_tool_bar"
