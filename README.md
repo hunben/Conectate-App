@@ -1,5 +1,5 @@
 # Conectate Network
-⚡Uniendo Personas Conectando Ideas⚡
+Uniendo Personas Conectando Ideas
 
 
 
