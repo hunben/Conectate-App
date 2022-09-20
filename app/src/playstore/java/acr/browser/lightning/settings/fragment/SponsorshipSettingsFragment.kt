@@ -189,9 +189,9 @@ class SponsorshipSettingsFragment : AbstractSettingsFragment(),
                                 //Log.d(LOG_TAG, it.toString())
                                 // Take this opportunity to update our entitlements
                                 // That should fix things up for re-installations
-                                if (it.sku == SPONSOR_BRONZE && it.isAcknowledged) {
-                                    userPreferences.sponsorship = Sponsorship.BRONZE
-                                }
+                            //    if (it.sku == SPONSOR_BRONZE && it.isAcknowledged) {
+                             //       userPreferences.sponsorship = Sponsorship.BRONZE
+                             //   }
                             }
                         }
 
@@ -203,7 +203,7 @@ class SponsorshipSettingsFragment : AbstractSettingsFragment(),
                             pref.summary = skuDetails.price + formatPeriod(skuDetails.subscriptionPeriod) + "\n" + skuDetails.description
                             pref.icon = ResourcesCompat.getDrawable(resources, R.drawable.ic_payment, activity?.theme)
                             // Check if that SKU is an active subscription
-                            pref.isChecked = purchases.purchasesList?.firstOrNull { purchase -> purchase.sku == skuDetails.sku && purchase.isAcknowledged } != null
+                       //     pref.isChecked = purchases.purchasesList?.firstOrNull { purchase -> purchase.sku == skuDetails.sku && purchase.isAcknowledged } != null
                             //
                             pref.onPreferenceChangeListener = Preference.OnPreferenceChangeListener { _, newValue: Any ->
                                 if (newValue == true) {
@@ -307,13 +307,13 @@ class SponsorshipSettingsFragment : AbstractSettingsFragment(),
                                 billingResult -> Log.d(LOG_TAG, "onAcknowledgePurchaseResponse: $billingResult")
                                 when (billingResult.responseCode) {
                                     BillingClient.BillingResponseCode.OK -> {
-                                        if (it.sku == SPONSOR_BRONZE) {
+                                      //  if (it.sku == SPONSOR_BRONZE) {
                                             // Purchase acknowledgement was successful
                                             // Update  sponsorship in our settings so that changes can take effect in the app
-                                            userPreferences.sponsorship = Sponsorship.BRONZE
+                                       //     userPreferences.sponsorship = Sponsorship.BRONZE
                                             // Update our screen to reflect changes
-                                            populatePreferenceScreen()
-                                        }
+                                       //     populatePreferenceScreen()
+                                      //  }
                                     }
                                 }
                             }

@@ -124,12 +124,20 @@ android {
 
     productFlavors {
 
+
+
+
+
         slions {
             dimension "BRAND"
-            applicationId "net.slions.fulguris"
-            versionCode 176
+            applicationId 'conectate.network.app'
+            versionCode 180
             versionName "1.8.8"
+
         }
+
+
+
 
         styx {
             dimension "BRAND"
@@ -190,6 +198,9 @@ android {
             applicationIdSuffix ".fdroid"
             buildConfigField "Sponsorship", "SPONSORSHIP", "Sponsorship.BRONZE"
         }
+        upe {
+            dimension 'BRAND'
+        }
 
     }
     compileSdk targetSdkVersion
@@ -225,7 +236,7 @@ android {
             // Just replace our archive base name, which by default is "app" with our own format according to flavor
             if (variant.flavorName.contains("slions")) {
                 //println("Use Fulguris archive name")
-                outputFileName = outputFileName.replaceFirst("^$archivesBaseName", "Fulguris-v$versionName")
+                outputFileName = outputFileName.replaceFirst("^$archivesBaseName", "Conectate-v$versionName")
             } else if (variant.flavorName.contains("styx")) {
                 //println("Use Styx archive name")
                 outputFileName = outputFileName.replaceFirst("^$archivesBaseName", "Styx-v$versionName")
@@ -298,7 +309,7 @@ dependencies {
     //implementation group: 'com.google.android.material', name: 'material', version: '1.6.0-alpha01'
 
     // Play Store billing
-    playstoreImplementation 'com.android.billingclient:billing:3.0.3'
+    playstoreImplementation 'com.android.billingclient:billing:4.0.0'
 
     // html parsing for reading mode
     implementation 'org.jsoup:jsoup:1.13.1'
