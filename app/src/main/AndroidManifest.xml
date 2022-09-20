@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="conectate.network.app"
     android:installLocation="auto">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -20,6 +21,8 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
 
 
 
@@ -79,6 +82,10 @@
         <meta-data
             android:name="android.max_aspect"
             android:value="2.1" />
+
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="4.0.0" />
 
         <activity
             android:name=".MainActivity"

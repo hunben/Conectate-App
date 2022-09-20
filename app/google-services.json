@@ -5,7 +5,9 @@
     "project_id": "fulguris-b1f69",
     "storage_bucket": "fulguris-b1f69.appspot.com"
   },
-  "client": [
+
+
+    "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:589942124652:android:5c678c55f8895299a3a849",
@@ -68,7 +70,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:589942124652:android:2b978f5b62763d38a3a849",
         "android_client_info": {
-          "package_name": "net.slions.fulguris.full.playstore"
+          "package_name": "conectate.network.app.full.playstore"
         }
       },
       "oauth_client": [
@@ -93,6 +95,8 @@
         }
       }
     },
+
+
     {
       "client_info": {
         "mobilesdk_app_id": "1:589942124652:android:f4999e733609d840a3a849",
