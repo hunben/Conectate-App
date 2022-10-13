@@ -3951,15 +3951,15 @@ abstract class BrowserActivity : ThemedBrowserActivity(), BrowserView, UIControl
         MaterialAlertDialogBuilder(this)
                 .setCancelable(true)
                 .setTitle(R.string.title_updated)
-                .setMessage(getString(R.string.message_updated, BuildConfig.VERSION_NAME))
-                .setNegativeButton(R.string.no, null)
-                .setPositiveButton(R.string.yes) { _, _ -> val url = getString(R.string.url_app_updates)
-                    val i = Intent(Intent.ACTION_VIEW)
-                    i.data = Uri.parse(url)
+                //.setMessage(getString(R.string.message_updated, BuildConfig.VERSION_NAME))
+               // .setNegativeButton(R.string.no, null)
+              //  .setPositiveButton(R.string.yes) { _, _ -> val url = getString(R.string.url_app_updates)
+              //      val i = Intent(Intent.ACTION_VIEW)
+              //      i.data = Uri.parse(url)
                     // Not sure that does anything
-                    i.putExtra("SOURCE", "SELF")
-                    startActivity(i)}
-                .resizeAndShow()
+              //      i.putExtra("SOURCE", "SELF")
+              //     startActivity(i)}
+              //  .resizeAndShow()
     }
 
 

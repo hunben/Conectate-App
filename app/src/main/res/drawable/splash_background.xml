@@ -21,5 +21,5 @@
  All Rights Reserved.
 -->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:gravity="center" android:drawable="@drawable/ic_launcher_foreground"/>
+    <item android:gravity="center" android:drawable="@mipmap/ic_launcher_foreground"/>
 </layer-list>

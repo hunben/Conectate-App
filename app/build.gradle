@@ -131,8 +131,8 @@ android {
         slions {
             dimension "BRAND"
             applicationId 'conectate.network.app'
-            versionCode 180
-            versionName "1.8.8"
+            versionCode 183
+            versionName "1.8.9"
 
         }
 
